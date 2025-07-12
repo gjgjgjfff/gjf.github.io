@@ -42,23 +42,23 @@
           <table style="width:100%;border:0px;border-spacing:0px 10px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 
 
-    <tr onmouseout="bolt3d_stop()" onmouseover="bolt3d_start()"  bgcolor="#ffffd0">
+    <tr onmouseout="autoconnect_stop()" onmouseover="autoconnect_start()"  bgcolor="#ffffd0">
       <td style="padding:16px;width:20%;vertical-align:middle">
         <div class="one">
-          <div class="two" id='auto-connect_image'><video  width=100% height=100% muted autoplay loop>
+          <div class="two" id='auto-connect'><video  width=100% height=100% muted autoplay loop>
           <source src="images/auto-connect.mp4" type="video/mp4">
           Your browser does not support the video tag.
 
           </video></div>
-          <img src='images/auto-connect.png' width="200">
+          <img src='images/auto-connect.png' width="160">
         </div>
         <script type="text/javascript">
-          function bolt3d_start() {
-            document.getElementById('auto-connect_image').style.opacity = "1";
+          function autoconnect_start() {
+            document.getElementById('auto-connect').style.opacity = "1";
           }
 
-          function bolt3d_stop() {
-            document.getElementById('auto-connect_image').style.opacity = "0";
+          function autoconnect_stop() {
+            document.getElementById('auto-connect').style.opacity = "0";
           }
           bolt3d_stop()
         </script>
@@ -90,23 +90,25 @@
       </td>
     </tr>
 
-    <tr onmouseout="ever_stop()" onmouseover="ever_start()">
+    <tr onmouseout="meshrft_stop()" onmouseover="meshrft_start()"  bgcolor="#ffffd0">
       <td style="padding:16px;width:20%;vertical-align:middle">
         <div class="one">
-          <div class="two" id='ever_image'>
-					  <img src='images/ever_after.png' width=100%>
-					</div>
-          <img src='images/ever_before.png' width=100%>
+          <div class="two" id='mesh-rft'><video  width=100% height=100% muted autoplay loop>
+          <source src="images/mesh-rft.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+
+          </video></div>
+          <img src='images/mesh-rft.png' width="160">
         </div>
         <script type="text/javascript">
-          function ever_start() {
-            document.getElementById('ever_image').style.opacity = "1";
+          function meshrft_start() {
+            document.getElementById('mesh-rft').style.opacity = "1";
           }
 
-          function ever_stop() {
-            document.getElementById('ever_image').style.opacity = "0";
+          function meshrft_stop() {
+            document.getElementById('mesh-rft').style.opacity = "0";
           }
-          ever_stop()
+          bolt3d_stop()
         </script>
       </td>
       <td style="padding:8px;width:80%;vertical-align:middle">
